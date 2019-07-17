@@ -1,0 +1,118 @@
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 0.6em;
+}
+.nav-link {
+  font-size: 0.9em;
+}
+
+@media (max-width: 370px) {
+  .navbar-brand {
+    font-size: 0.5em;
+  }
+}
+
+.navbar-toggler {
+  background-color: #1abc9c;
+}
+
+.main {
+  width: 100%;
+  background-color: #1abc9c;
+  color: white;
+}
+.main img {
+  width: 20%;
+}
+.main p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.about {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.about .row .col-md-4 {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+form .btn {
+  background-color: #1abc9c;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.modal-dialog .btn {
+  background-color: #1abc9c;
+}
+
+#portfolio img {
+  cursor: pointer;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+label {
+  opacity: 0;
+  transform: translateY(-70px);
+  transition: all 0.4s ease-in-out;
+  color: #1abc9c;
+  text-shadow: 1px 1px 1px #1abc9c;
+}
+.form-control:focus + label {
+  opacity: 1;
+  transform: translateY(-90px);
+}
+.wrap {
+  width: 92%;
+  height: 100%;
+  background-color: rgba(0, 255, 0, 0.5);
+  position: absolute;
+  top: 0;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  clip-path: circle(20% at 0% 0%);
+  transition: clip-path 0.4s ease-in-out;
+}
+
+.wrap i {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.wrap h1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+#portfolio img:hover + .wrap,
+.wrap:hover {
+  clip-path: circle(150% at 0% 0%);
+}
+
+.wrap:hover .fa-info {
+  opacity: 0;
+}
+
+@media (max-width: 650px) {
+  .main img {
+    width: 50%;
+  }
+  .main h1 {
+    font-size: 2.4em;
+  }
+}
